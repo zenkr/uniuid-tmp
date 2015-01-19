@@ -11,16 +11,15 @@
 |
 */
 
-
-Route::get('/', function()
-{
-	return View::make('hello');
-});
-
 Route::group(array('domain' => '{dname}.get.uniuid.com'), function()
 {
     Route::get('{pagepath}', 'GetController@contentReturn');
     // Route::get('{pagepath}', 'GetController@contentReturn');
     // Route::get('{pagepath}', 'GetController@contentReturn');
 
+});
+
+Route::get('/', function()
+{
+    return View::make('hello');
 });
