@@ -13,11 +13,11 @@
 
 Route::group(array('domain' => '{dname}.get.uniuid.com'), function()
 {
-    Route::get('{pagepath}', 'GetController@contentReturn');
-    Route::get('/', function()
-    {
-        return Response::json(array('errcode' => '400'));
-    });
+    Route::get('{pagepath?}', 'GetController@contentReturn')->where('pagepath','[A-Za-z0-9/]+');
+    // Route::get('/', function()
+    // {
+    //     return Response::json(array('errcode' => '400'));
+    // });
     // Route::get('{pagepath}', 'GetController@contentReturn');
     // Route::get('{pagepath}', 'GetController@contentReturn');
 
