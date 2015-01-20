@@ -4,7 +4,7 @@ class GetController extends BaseController {
 
     public function contentReturn($dname, $pagepath = '/')
     {
-    	$conf = yaml_parse_file ('/zsrv/etc/uniuid-tmp/public/yaml/about.yaml');
+    	$conf = yaml_parse_file ('/zsrv/etc/uniuid-tmp/yaml/about.yaml');
     	print_r($conf);
         // $arraystr = array();
         // return Response::json($arraystr);
