@@ -1,0 +1,32 @@
+---
+global:
+
+nav:
+  - Home : 
+      uri : /
+      loc : /index.tpl
+      target : _blank
+  - News :
+      uri : /
+      loc : /news.tpl
+      target : self
+      subnav : 
+        - Tech :
+            uri : /
+            loc : /news/tech.tpl
+            target : self
+        - Sport :
+            uri : /
+            loc : /news/sport.tpl
+            target : self
+  - Blog : 
+      uri : http://blog.zenkr.com
+      loc : 
+      target : _blank
+      subnav : 
+  - About : 
+      uri : /about
+      loc : /about.tpl
+      target : _blank
+      subnav : 
+...
